@@ -1,0 +1,188 @@
+/*Quitando margenes de arriba*/
+*{
+   margin: 0;
+   padding: 0;
+}
+/*Estableciendo el color de fondo y el ancho*/
+header{
+   width: 100%;
+   height: 80px;
+}
+/*Modificando el ancho*/
+.ancho{
+   /*width: 80%;*/
+   height: 80px;
+   margin: auto;
+}
+/*Poniendo el logo con su ancho, alto, etc*/
+.logo{
+   width: 30%;
+   height: 80px;
+   float: left;
+   padding-top: 1.5rem;
+   box-sizing: border-box;
+   background-color: white;
+   /*font-family: rale;*/
+}
+/*Poniendo el png de la img*/
+.logo img {
+   width: auto;
+   height: 2.1rem;
+   margin-left: 3rem;
+}
+/*Si el logo estuviese con tipografía, sería así
+.logo p a{
+   color: black;
+   font-size: 2rem;
+   text-decoration: none;
+   font-weight: bold;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+*/
+/*Estableciendo el ancho de la barra de navegación, su altura*/
+nav{
+   display: block;
+   width: 70%;
+   height: 80px;
+   float: left;
+   text-align: right;
+   padding-top: 30px;
+   box-sizing: border-box;
+   background-color: white;
+}
+/*Para que se vea un menú en línea*/
+nav ul li {
+   display: inline;
+}
+/*Los elementos de navegación: altura, decoraciones y font-family*/
+nav ul li a{
+   color: black;
+   font-size: 0.9rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding-left: 15px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: rale;
+   margin-right: 3rem;
+}
+/*Cambiar el color on hover a un gris claro*/
+nav ul li a:hover{
+   color: gainsboro;
+}
+/*Declarando la tipografía, escogida de google fonts*/
+@font-face {
+   font-family: rale;
+   src: url(Fuentes/Raleway-Regular.ttf);
+}
+/*Dar estilo al título "contacta con nosotros*/
+h1{
+   font-size: 30px;
+   margin-bottom: 40px;
+   padding-top: 30px;
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: rale;
+   letter-spacing: 1px;
+}
+/*Creamos una línea para separar contenido*/
+.linea {
+   border-top: 1px solid black;
+   height: 2px;
+   max-width: 200px;
+   padding: 0;
+   margin: 20px auto 0 auto;
+ }
+/*Damos estilo al párrafo, centrado y con interlineado*/
+div p{
+   font-size: 16px;
+   margin-bottom: 30px;
+   margin-top: 30px;
+   color: black;
+   text-align: center;
+   font-family: rale;
+}
+/*Creamos una línea para separar contenido*/
+.linea {
+   border-top: 1px solid black;
+   height: 2px;
+   max-width: 200px;
+   padding: 0;
+   margin: 20px auto 0 auto;
+ }
+/*Estilo al título ubicación*/
+h4{
+   font-size: 20px;
+   margin-bottom: 30px;
+   margin-top: 40px;
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: rale;
+   letter-spacing: 1px;
+}
+/*Tamaño y altura de la imagen del mapa*/
+div img{
+   display: block;
+   margin: auto;
+   width: 600px;
+}
+/*Pie de página*/
+footer{
+   background-color: grey;
+   /*color: var(--second-c);*/
+ }
+ footer ul{
+   padding:0;
+ }
+ footer li{
+   list-style: none;
+ }
+  /*Creamos un footer con 3 columnas (1-logo en blanco, 2- dirección, 3- redes sociales*/
+ .wrap-footer{
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   grid-template-rows: auto;
+   column-gap: 7%;
+   padding: 1rem;
+   margin: 2rem auto;
+   max-width: 1200px;
+ }
+ .logo-footer img{
+   width: 16rem;
+   margin-top: 4rem;
+ }
+ .text-footer li{
+   color: white;
+   line-height: 2;
+   text-align: left;
+ }
+ .text-footer li , a{
+   color: white;
+   margin-top: 1rem;
+   line-height: 1;
+   text-align: center;
+   text-align: justify;
+ }
+
+ .text-footer h5 {
+   color: white;
+   line-height: 2;
+   text-transform: uppercase;
+   text-align: left;
+ }
+ .redes-sociales h5{
+   text-transform: uppercase;
+   color: white;
+   text-align: left;
+   padding-top: 2rem;
+ }
+ .redes-sociales img{
+   width: 1.9rem;
+   margin-top: 0.8rem;
+   padding: 0.3rem;
+   align-items: center;
+   display: inline;
+ }
